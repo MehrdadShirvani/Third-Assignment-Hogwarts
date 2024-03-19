@@ -5,7 +5,6 @@ import java.util.UUID;
 
 public class User implements UserManagement {
 
-
     //region Fields
     protected UUID userID;
     protected String username;
@@ -13,10 +12,8 @@ public class User implements UserManagement {
     protected String lastName;
     protected int roleID;
     protected int houseID;
-    // TODO: Passwords should hashed
     private String password;
     //endregion
-
     public User(String firstName, String lastName, String username, String password) throws Exception
     {
         this.username = username;
@@ -25,6 +22,7 @@ public class User implements UserManagement {
             throw new Exception("Username was not unique");
         }
 
+        this.userID = UUID.randomUUID();
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = HashText.encodeText(password);
@@ -41,15 +39,27 @@ public class User implements UserManagement {
         if(username.equals(newUsername) == false || UserManagement.isUsernameUnique(newUsername))
         {
             username = newUsername;
-            //TODO Change the list as well
-            return;
         }
-
     }
 
     @Override
     public void changePassword(String newPassword)
     {
         password = HashText.encodeText(newPassword);
+    }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        if(obj instanceof User == false)
+        {
+            return false;
+        }
+        return ((User) obj).userID == userID;
+    }
+
+    public String getPassword()
+    {
+        return password;
     }
 }
