@@ -308,7 +308,7 @@ public class Main {
         int command = (new Scanner(System.in)).nextInt();
         if(command == 1)
         {
-            Hogwarts.removeUser(user);
+            ((Assistant)currentUser).removeUser(user);
             ColorPrinter.printGreen("User was deleted...");
             try
             {
@@ -456,8 +456,8 @@ public class Main {
 
         try
         {
-            User newUser = new Assistant(firstName, lastName, username, password);
-            Hogwarts.addUser(newUser);
+            Assistant newUser = new Assistant(firstName, lastName, username, password);
+            ((Assistant)currentUser).addNewAssistant(newUser);
 
             ColorPrinter.printGreen("admin was added successfully");
             Thread.sleep(2000);

@@ -39,10 +39,6 @@ public class Teacher extends User
         return StudentCourseDetail.getStudentsOfTeacher(userID, true);
     }
 
-    public void scoreStudent(StudentCourseDetail detail, double grade)
-    {
-        detail.setGrade(grade);
-    }
     public List<Course> getCourses()
     {
         List<Course> courses = Hogwarts.getAllCourses();

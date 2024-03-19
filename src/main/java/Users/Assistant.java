@@ -16,14 +16,9 @@ public class Assistant extends User{
         Hogwarts.addUser(assistant);
     }
 
-    public void removeTeacher(Teacher teacher)
+    public void removeUser(User user)
     {
-       Hogwarts.removeUser(teacher);
-    }
-
-    public void removeStudent(Student student)
-    {
-        Hogwarts.removeUser(student);
+       Hogwarts.removeUser(user);
     }
 
 }
