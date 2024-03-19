@@ -16,6 +16,13 @@ public class Course
     protected boolean hasTeacher = false;
     //endregion
 
+    public Course(String name)
+    {
+        this.name = name;
+        this.hasTeacher = false;
+        this.courseID = UUID.randomUUID();
+    }
+
     public static List<Course> getCoursesWithNoTeacher()
     {
         List<Course> courses = Hogwarts.getAllCourses();
@@ -62,5 +69,22 @@ public class Course
     public UUID getTeacherId()
     {
         return teacherID;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Course == false)
+            return false;
+        return  ((Course)obj).getCourseID().equals(courseID);
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public boolean getHasTeacher()
+    {
+        return hasTeacher;
     }
 }
