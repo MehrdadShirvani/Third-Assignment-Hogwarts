@@ -3,7 +3,7 @@ import Utilities.HashText;
 import java.util.Objects;
 import java.util.UUID;
 
-public class User implements UserManagement {
+public abstract class User implements UserManagement {
 
     //region Fields
     protected UUID userID;
@@ -61,5 +61,39 @@ public class User implements UserManagement {
     public String getPassword()
     {
         return password;
+    }
+
+    public String getFullName()
+    {
+        return firstName + " " + lastName;
+    }
+
+    public String getRoleName()
+    {
+        return switch (roleID) {
+            case 2 -> "Teacher";
+            case 3 -> "Student";
+            default -> "Assistant";
+        };
+    }
+
+    public UUID getUserID()
+    {
+        return  userID;
+    }
+
+    public String getUsername() {
+        return  username;
+    }
+
+    public String getHouseName()
+    {
+        return switch (houseID)
+        {
+            case 2 -> "Hufflepuff";
+            case 3 -> "Ravenclaw";
+            case 4 -> "Slytherin";
+            default -> "Gryffindor";
+        };
     }
 }

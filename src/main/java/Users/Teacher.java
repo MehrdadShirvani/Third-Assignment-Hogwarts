@@ -57,9 +57,14 @@ public class Teacher extends User
         return result;
     }
 
-    public double getScore()
+
+    public double getAverageScore()
     {
-        return 1;
-        //TODO
+        return StudentCourseDetail.getTeacherAverageScore(userID);
+    }
+
+    public List<String> getComments()
+    {
+        return StudentCourseDetail.getTeacherComments(userID);
     }
 }
