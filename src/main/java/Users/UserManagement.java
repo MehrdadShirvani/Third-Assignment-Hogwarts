@@ -1,6 +1,11 @@
 package Users;
 
+import Hogwarts.Hogwarts;
 import Users.User;
+import Utilities.HashText;
+
+import java.util.List;
+import java.util.Objects;
 
 public interface UserManagement {
     boolean validatePassword(String enteredPassword);
@@ -8,13 +13,28 @@ public interface UserManagement {
     public void changePassword(String newPassword);
     public static User login(String username, String password)
     {
-        //TODO: implement functionality
+        String encodedPassword = HashText.encodeText(password);
+        List<User> users = Hogwarts.getAllUsers();
+        for(User user : users)
+        {
+            if(Objects.equals(user.username, username) && Objects.equals(user.getPassword(), encodedPassword))
+            {
+                return user;
+            }
+        }
         return null;
     }
 
     public static boolean isUsernameUnique(String username)
     {
-        //TODO: implement functionality
+        List<User> users = Hogwarts.getAllUsers();
+        for(User user : users)
+        {
+            if(Objects.equals(user.username, username))
+            {
+                return false;
+            }
+        }
         return true;
     }
 
