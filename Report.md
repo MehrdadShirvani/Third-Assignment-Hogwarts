@@ -1,6 +1,6 @@
 # Hogwarts School of Witchcraft and Wizardry
 
-Welcome to hogwarts! (No Safety Insurance)
+Welcome to Hogwarts! *__(No Safety Insurance)__*
 
 ## Prerequisites ✅
 
