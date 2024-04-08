@@ -1,10 +1,10 @@
-# Third Assignment: Hogwarts School Management System 🧙‍♂️
+# Third Assignment: Hogwarts.Hogwarts School Management System 🧙‍♂️
 
-Welcome to your third Advanced Programming (AP) assignment, where you'll embark on the magical journey of building the Hogwarts School Management System. This project aims to streamline administrative tasks at Hogwarts School of Witchcraft and Wizardry, offering a comprehensive platform for managing teachers, students, and courses within the esteemed institution.
+Welcome to your third Advanced Programming (AP) assignment, where you'll embark on the magical journey of building the Hogwarts.Hogwarts School Management System. This project aims to streamline administrative tasks at Hogwarts.Hogwarts School of Witchcraft and Wizardry, offering a comprehensive platform for managing teachers, students, and courses within the esteemed institution.
 
 ## Prerequisites ✅
 
-Before diving into the enchanting world of Hogwarts, ensure you have the following prerequisites installed on your magical workstation:
+Before diving into the enchanting world of Hogwarts.Hogwarts, ensure you have the following prerequisites installed on your magical workstation:
 
 - Java 21
 - Git
@@ -27,7 +27,7 @@ By completing this assignment, you will:
 4. Implement an interactive menu in the command line's `runMenu()` function of the Main class, enabling users to utilize the program's functionalities seamlessly.
 5. Write a comprehensive report in Markdown format, detailing the tasks you've completed and any challenges encountered. Include UML diagrams of the classes you've developed. For example, a UML diagram for account class is as follows:
 
-	<img src="./Account.png" alt="Image" width="200" height="150">
+	<img src="./Users.User.png" alt="Image" width="200" height="150">
 
 6. Commit your changes and push them to your GitHub repository.
 7. Submit a pull request from your `develop` branch to your `main` branch. Your mentor will review the pull request and merge it upon approval.
@@ -70,16 +70,16 @@ The assistant serves as an administrative tool, allowing administrators to creat
 
 ### Student class:
 
-Students can perform various actions within the Hogwarts School Management System, including taking courses, viewing teachers, and participating in sorting quizzes.
+Students can perform various actions within the Hogwarts.Hogwarts School Management System, including taking courses, viewing teachers, and participating in sorting quizzes.
 
 - **Taking Courses**: Enroll in courses by taking them.
 - **Viewing All Courses Taken**: View a list of all courses taken.
 - **Viewing All Teachers**: Access a list of all teachers taken courses with.
-- **Taking a Sorting Quiz**: Take a quiz to determine their Hogwarts House (Gryffindor, Hufflepuff, Ravenclaw, or Slytherin).
+- **Taking a Sorting Quiz**: Take a quiz to determine their Hogwarts.Hogwarts House (Gryffindor, Hufflepuff, Ravenclaw, or Slytherin).
 
-### Hogwarts class:
+### Hogwarts.Hogwarts class:
 
-Serving as a central management system for Hogwarts School of Witchcraft and Wizardry, the Hogwarts class facilitates various actions for teachers, students, and administrators.
+Serving as a central management system for Hogwarts.Hogwarts School of Witchcraft and Wizardry, the Hogwarts.Hogwarts class facilitates various actions for teachers, students, and administrators.
 
 - Managing lists of teachers, courses, admins, and students from different Houses.
 - Rating teachers and leaving comments for them.
@@ -92,7 +92,7 @@ Serving as a central management system for Hogwarts School of Witchcraft and Wiz
 
 ### Course class:
 
-Representing specific courses offered at Hogwarts School of Witchcraft and Wizardry, the Course class is capable of setting course information.
+Representing specific courses offered at Hogwarts.Hogwarts School of Witchcraft and Wizardry, the Course class is capable of setting course information.
 
 - **Setting Course Information**:
   - Store the title of the course.
@@ -120,7 +120,7 @@ As an additional challenge, consider implementing the following bonus objectives
 - **View Weekly Schedule**: Implement functionality for students to view their weekly schedule (optional).
 - **Utilize Abstract Classes and Interfaces**: Explore the usage of abstract classes and interfaces in your Java implementation to achieve better code structure and design.
 - Enhance your classes by incorporating additional attributes and methods to enrich their functionality and expand their capabilities.
-- Provide a simple GUI (Graphical User Interface) for your project. The recommended library to do so is Javafx. JavaFX empowers developers to create dynamic and engaging user interfaces for their Java applications, offering a modern and versatile platform for building cross-platform desktop, web, and mobile applications. In the event that you encounter any difficulties adding JavaFX to your project, you have the option to create a separate repository and develop your project there.
+- Provide a simple GUI (Graphical Users.User Interface) for your project. The recommended library to do so is Javafx. JavaFX empowers developers to create dynamic and engaging user interfaces for their Java applications, offering a modern and versatile platform for building cross-platform desktop, web, and mobile applications. In the event that you encounter any difficulties adding JavaFX to your project, you have the option to create a separate repository and develop your project there.
 
 ## Submission ⌛
 
